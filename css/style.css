@@ -1,0 +1,102 @@
+:root{
+  --lagoa:#123524; --musgo:#2f7a3e; --folha:#4fa152; --broto:#e4f3b8;
+  --nevoa:#f1f8e8; --agua:#9bd6c3; --lodo:#6b4a2b; --sol:#f2c94c; --texto:#17301f;
+  --titulo:'Fraunces',Georgia,serif; --corpo:'Nunito',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:var(--corpo);color:var(--texto);background:var(--nevoa);line-height:1.65;font-size:1.05rem}
+img{max-width:100%;display:block}
+a{color:var(--musgo)}
+:focus-visible{outline:3px solid var(--sol);outline-offset:3px}
+h1,h2,h3{font-family:var(--titulo);line-height:1.15;margin:0 0 .6em;color:var(--lagoa)}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:800}
+h3{font-size:1.25rem;font-weight:600}
+p{margin:0 0 1em;max-width:62ch}
+
+/* Topo */
+.topo{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:.6rem 1.2rem;background:var(--lagoa);color:#fff}
+.marca{display:flex;align-items:center;gap:.5rem;color:#fff;text-decoration:none;font-family:var(--titulo);font-weight:800;font-size:1.2rem}
+.marca svg{width:38px;height:32px}
+.topo nav{display:flex;gap:1.3rem}
+.topo nav a{color:#d6ecc8;text-decoration:none;font-weight:700;padding:.2rem 0;border-bottom:3px solid transparent}
+.topo nav a:hover,.topo nav a.ativo{color:#fff;border-bottom-color:var(--sol)}
+.menu-btn{display:none;background:none;border:2px solid #d6ecc8;color:#fff;font-size:1.4rem;border-radius:8px;padding:.1rem .6rem;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;display:grid;grid-template-columns:1.1fr 1fr;gap:1rem;align-items:center;min-height:82vh;padding:3rem 6vw;background:linear-gradient(180deg,#d9efc9,#bfe3c0)}
+.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);font-weight:800}
+.ola{font-weight:700;color:var(--musgo);margin-bottom:.3em}
+.sub{font-size:1.15rem}
+.botoes{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.4rem}
+.btn{display:inline-block;padding:.75rem 1.4rem;border-radius:999px;background:var(--lagoa);color:#fff;text-decoration:none;font-weight:700}
+.btn:hover{background:var(--musgo)}
+.btn.claro{background:#fff;color:var(--lagoa);box-shadow:inset 0 0 0 2px var(--lagoa)}
+.folhagem{position:absolute;pointer-events:none}
+.fo-1{top:-30px;left:-50px;width:320px;opacity:.9}
+.hero-texto{position:relative;z-index:1}
+.lagoa{position:relative;max-width:520px;justify-self:center;width:100%}
+#sapo-pulador{outline:none;cursor:pointer;transition:transform .45s cubic-bezier(.3,1.6,.5,1)}
+#sapo-pulador:focus-visible{filter:drop-shadow(0 0 4px #f2c94c) drop-shadow(0 0 4px #f2c94c)}
+.balao{position:absolute;top:0;right:6%;margin:0;padding:.35rem .9rem;background:#fff;border-radius:999px;font-weight:700;font-size:.95rem;box-shadow:0 2px 0 var(--musgo)}
+.juncos{transform-origin:bottom}
+
+/* Seções */
+.sessao{position:relative;padding:4.5rem 6vw}
+.sessao.verde-claro{background:var(--broto)}
+.miolo{max-width:1050px;margin:0 auto}
+.miolo.duas{display:grid;grid-template-columns:auto 1fr;gap:2.5rem;align-items:start}
+.retrato{width:240px;height:240px;object-fit:cover;border-radius:46% 54% 50% 50%/55% 45% 55% 45%;border:6px solid var(--folha)}
+.fatos{list-style:none;padding:0;margin:1.2rem 0 0;display:grid;gap:.4rem}
+.fatos strong{display:inline-block;min-width:7.5rem;color:var(--musgo)}
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+.grade.dois{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.cartao{background:#fff;border-radius:18px 18px 18px 4px;padding:1.4rem;border-top:6px solid var(--folha)}
+.link{display:inline-block;margin:.2rem 1rem .2rem 0;font-weight:700}
+.lista-proj{display:grid;gap:1.6rem}
+.lista-proj article{padding-left:1.4rem;border-left:6px solid var(--folha)}
+.papel{background:var(--broto);padding:.6rem .9rem;border-radius:10px;font-size:.98rem}
+.destaque{font-size:1.25rem;background:var(--sol);color:var(--lagoa);padding:.8rem 1.1rem;border-radius:14px;max-width:none}
+.galeria{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.6rem}
+.galeria figure{margin:0}
+.galeria img{width:100%;border-radius:14px}
+.galeria figcaption{font-size:.9rem;margin-top:.4rem}
+.galeria .banner{grid-row:span 1}
+.abrir-banner{padding:0;border:0;background:none;cursor:zoom-in;display:block;width:100%}
+.site{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 3px 0 var(--folha)}
+.site img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.site div{padding:1.1rem 1.3rem}
+
+/* Contato */
+.fundo-lagoa{background:var(--lagoa);color:#e8f5dc}
+.fundo-lagoa h2{color:#fff}
+.fundo-lagoa a{color:var(--sol)}
+.chips,.contatos{list-style:none;padding:0;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem}
+.chips li{background:var(--folha);color:var(--lagoa);font-weight:700;padding:.4rem 1rem;border-radius:999px}
+.contatos li{margin-bottom:.8rem;word-break:break-word}
+.copiar{margin-left:.4rem;font:inherit;font-size:.85rem;font-weight:700;border:2px solid var(--sol);background:none;color:var(--sol);border-radius:8px;padding:.1rem .6rem;cursor:pointer}
+
+/* Rodapé e modal */
+.rodape{background:#0b2418;color:#bcd9b2;text-align:center;padding:1.6rem 1rem}
+.rodape svg{width:56px;height:46px;margin:0 auto .4rem;--sapo:#6cbb6e}
+.rodape p{margin:0 auto;font-size:.95rem}
+dialog{border:0;padding:0;background:#fff;border-radius:12px;max-width:min(92vw,820px);max-height:92vh;overflow:auto}
+dialog::backdrop{background:rgba(10,30,20,.8)}
+.fechar{position:sticky;top:8px;float:right;margin:8px;border:0;background:var(--lagoa);color:#fff;font-size:1.1rem;width:40px;height:40px;border-radius:50%;cursor:pointer}
+
+/* Celular */
+@media (max-width:760px){
+  .menu-btn{display:block}
+  .topo nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--lagoa);padding:.5rem 1.2rem 1rem}
+  .topo nav.aberto{display:flex}
+  .topo nav a{padding:.7rem 0}
+  .hero{grid-template-columns:1fr;min-height:auto;padding:2.5rem 1.4rem}
+  .sessao{padding:3rem 1.4rem}
+  .miolo.duas{grid-template-columns:1fr}
+  .retrato{width:180px;height:180px}
+  .fo-1{width:190px;top:-20px;left:-60px;opacity:.7}
+  .hero-texto{padding-top:2.2rem}
+  .galeria{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}#sapo-pulador{transition:none}}
