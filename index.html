@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jean Santana · Portfólio</title>
+<meta name="description" content="Portfólio de Jean Lucas de Alencar Santana, estudante do Técnico em Informática no IFMS Nova Andradina.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐸</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Desenhos reutilizáveis: sapo, folha e vitória-régia -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="sapo" viewBox="0 0 120 100">
+      <ellipse cx="22" cy="84" rx="20" ry="9" fill="var(--sapo-escuro,#2f7a3e)"/>
+      <ellipse cx="98" cy="84" rx="20" ry="9" fill="var(--sapo-escuro,#2f7a3e)"/>
+      <ellipse cx="60" cy="62" rx="40" ry="28" fill="var(--sapo,#4fa152)"/>
+      <ellipse cx="60" cy="72" rx="25" ry="16" fill="#e4f3b8"/>
+      <circle cx="36" cy="34" r="15" fill="var(--sapo,#4fa152)"/>
+      <circle cx="84" cy="34" r="15" fill="var(--sapo,#4fa152)"/>
+      <circle cx="36" cy="33" r="10" fill="#fff"/><circle cx="84" cy="33" r="10" fill="#fff"/>
+      <circle cx="38" cy="34" r="5" fill="#123524"/><circle cx="82" cy="34" r="5" fill="#123524"/>
+      <path d="M40 56 Q60 70 80 56" fill="none" stroke="#123524" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="32" cy="60" r="5" fill="#f4a6a0" opacity=".7"/><circle cx="88" cy="60" r="5" fill="#f4a6a0" opacity=".7"/>
+      <ellipse cx="40" cy="90" rx="12" ry="5" fill="var(--sapo-escuro,#2f7a3e)"/>
+      <ellipse cx="80" cy="90" rx="12" ry="5" fill="var(--sapo-escuro,#2f7a3e)"/>
+    </symbol>
+    <symbol id="folha" viewBox="0 0 100 60">
+      <path d="M2 30C25 -6 75 -6 98 30 75 66 25 66 2 30Z" fill="currentColor"/>
+      <path d="M2 30H92" stroke="#fff" stroke-opacity=".35" stroke-width="2" fill="none"/>
+    </symbol>
+    <symbol id="vitoria" viewBox="0 0 120 50">
+      <ellipse cx="60" cy="28" rx="58" ry="20" fill="#2f8f4e"/>
+      <path d="M60 28L112 14A58 20 0 0 1 112 14Z" fill="#cfe9dc"/>
+      <ellipse cx="60" cy="24" rx="58" ry="18" fill="#3aa35d"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="topo">
+  <a href="#inicio" class="marca"><svg viewBox="0 0 120 100" aria-hidden="true"><use href="#sapo"/></svg>Jean Santana</a>
+  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+  <nav id="menu">
+    <a href="#sobre">Sobre</a>
+    <a href="#atividades">Atividades</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#feiras">Feiras</a>
+    <a href="#sites">Sites</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+<!-- INÍCIO -->
+<section id="inicio" class="hero">
+  <svg class="folhagem fo-1" viewBox="0 0 300 200" aria-hidden="true">
+    <use href="#folha" x="0" y="20" width="170" height="100" color="#2f7a3e" transform="rotate(25 85 70)"/>
+    <use href="#folha" x="60" y="-10" width="150" height="90" color="#4fa152" transform="rotate(55 135 35)"/>
+    <use href="#folha" x="-20" y="90" width="150" height="90" color="#1f5c34" transform="rotate(8 55 135)"/>
+  </svg>
+  <div class="hero-texto">
+    <p class="ola">Olá, eu sou o</p>
+    <h1>Jean Lucas<br>de Alencar Santana</h1>
+    <p class="sub">Estudante do Técnico em Informática Integrado ao Ensino Médio no IFMS, Campus Nova Andradina.</p>
+    <div class="botoes">
+      <a class="btn" href="#projetos">Ver projetos</a>
+      <a class="btn claro" href="#contato">Falar comigo</a>
+    </div>
+  </div>
+  <div class="lagoa">
+    <svg viewBox="0 0 400 300" role="img" aria-label="Lagoa com vitórias-régias e um sapo. Clique no sapo para ele pular.">
+      <ellipse cx="200" cy="170" rx="190" ry="110" fill="#7cc4b0"/>
+      <ellipse cx="200" cy="165" rx="170" ry="95" fill="#9bd6c3"/>
+      <use href="#vitoria" x="30" y="150" width="130" height="55"/>
+      <use href="#vitoria" x="250" y="185" width="120" height="50"/>
+      <use href="#vitoria" id="pad-a" x="140" y="110" width="150" height="62"/>
+      <g class="rastro" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2"><ellipse cx="200" cy="245" rx="40" ry="8"/><ellipse cx="200" cy="245" rx="62" ry="12"/></g>
+      <g class="juncos" stroke="#2f7a3e" stroke-width="5" stroke-linecap="round">
+        <path d="M358 230V90M372 235V60M344 235V110"/>
+        <path d="M372 60v-26M358 90V70M344 110V90" stroke="#6b4a2b" stroke-width="9"/>
+      </g>
+      <g id="sapo-pulador" tabindex="0" role="button" aria-label="Fazer o sapo pular">
+        <use href="#sapo" x="152" y="50" width="96" height="80"/>
+      </g>
+    </svg>
+    <p class="balao" id="balao" aria-live="polite">clique no sapo</p>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="sessao">
+  <div class="miolo duas">
+    <img class="retrato" src="img/jean.jpg" alt="Foto de Jean sorrindo discretamente, de óculos" width="240" height="240">
+    <div>
+      <h2>Sobre mim</h2>
+      <p>Sou o Jean, estudante do curso Técnico em Informática Integrado ao Ensino Médio no Instituto Federal de Mato Grosso do Sul (IFMS), Campus Nova Andradina. Estou me formando em 2026.</p>
+      <p>Conheço JavaScript, HTML, CSS e manutenção de computadores. Neste ano, apresentei meu TCC na Fecinova e conquistei o 2º lugar na categoria de trabalhos multidisciplinares.</p>
+      <ul class="fatos">
+        <li><strong>Curso</strong> Técnico em Informática Integrado</li>
+        <li><strong>Instituição</strong> IFMS · Nova Andradina (MS)</li>
+        <li><strong>Formatura</strong> 2026</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ATIVIDADES -->
+<section id="atividades" class="sessao verde-claro">
+  <div class="miolo">
+    <h2>Atividades acadêmicas</h2>
+    <div class="grade">
+      <article class="cartao">
+        <h3>TCC sobre o ICAS</h3>
+        <p>Trabalho de Conclusão de Curso sobre a atuação do Instituto de Conservação de Animais Silvestres na proteção do Cerrado e do Pantanal. Escrito em dupla, com 24 páginas.</p>
+        <a class="link" href="docs/TCC-ICAS-Jean-Larissa.pdf" target="_blank" rel="noopener">Ler o TCC (PDF)</a>
+      </article>
+      <article class="cartao">
+        <h3>Programação para Dispositivos Móveis 2</h3>
+        <p>Atividades em JavaScript: soma de números, cálculo de média e tabuada, em uma página responsiva.</p>
+      </article>
+      <article class="cartao">
+        <h3>Git e GitHub</h3>
+        <p>Atividades de versionamento com branches e de middleware, além do trabalho da biblioteca, todas em repositórios no GitHub.</p>
+        <a class="link" href="https://github.com/Jean-2009?tab=repositories" target="_blank" rel="noopener">Ver repositórios</a>
+      </article>
+      <article class="cartao">
+        <h3>Curso Técnico em Informática</h3>
+        <p>Formação integrada ao ensino médio, com disciplinas de programação, desenvolvimento web e manutenção de computadores.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETOS -->
+<section id="projetos" class="sessao">
+  <div class="miolo">
+    <h2>Projetos</h2>
+    <div class="lista-proj">
+      <article>
+        <h3>A institucionalização e conservação do Cerrado e Pantanal</h3>
+        <p>Pesquisa sobre como o ICAS reduz os atropelamentos de fauna nas rodovias de Mato Grosso do Sul, com projetos como Bandeiras e Rodovias e Tatu-Canastra.</p>
+        <p class="papel"><strong>Minha participação:</strong> coautor do TCC e do banner apresentado na Fecinova, em dupla com Larissa Prado Araldo e orientação da professora Débora Macorini.</p>
+      </article>
+      <article>
+        <h3>NeonNFT</h3>
+        <p>Vitrine de NFTs com tema neon, com cards animados, cabeçalho com menu responsivo e lista de coleções.</p>
+        <p class="papel"><strong>Minha participação:</strong> desenvolvimento em grupo no Desafio 1.0, usando HTML e CSS.</p>
+      </article>
+      <article>
+        <h3>Atividades PDM 2</h3>
+        <p>Página com três mini-aplicativos em JavaScript: soma, média de quatro notas e tabuada.</p>
+        <p class="papel"><strong>Minha participação:</strong> desenvolvimento individual.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FEIRAS -->
+<section id="feiras" class="sessao verde-claro">
+  <div class="miolo">
+    <h2>Feiras e eventos</h2>
+    <p class="destaque">🏅 <strong>Fecinova 2026</strong>: 2º lugar na categoria de trabalhos multidisciplinares.</p>
+    <p>A Fecinova é a Feira de Ciência e Tecnologia de Nova Andradina, organizada pelo IFMS. Apresentei o TCC sobre o ICAS em formato de banner científico.</p>
+    <div class="galeria">
+      <figure><img src="img/fecinova-1.jpg" alt="Jean, à direita, segurando o certificado da Fecinova no palco do IFMS" loading="lazy"><figcaption>Entrega do certificado. Foto: @silveriosousa.oficial</figcaption></figure>
+      <figure><img src="img/fecinova-2.jpg" alt="Jean, à direita, posando com o certificado ao lado de um professor" loading="lazy"><figcaption>Foto: @silveriosousa.oficial</figcaption></figure>
+      <figure class="banner">
+        <button class="abrir-banner" aria-label="Ampliar o banner da Fecinova"><img src="img/banner-fecinova.jpg" alt="Banner científico do TCC sobre o ICAS apresentado na Fecinova" loading="lazy"></button>
+        <figcaption>Banner do trabalho. <a class="link" href="docs/banner-fecinova-icas.pdf" target="_blank" rel="noopener">Baixar PDF</a></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- SITES -->
+<section id="sites" class="sessao">
+  <div class="miolo">
+    <h2>Sites desenvolvidos</h2>
+    <div class="grade dois">
+      <article class="site">
+        <img src="img/site-neonnft.jpg" alt="Página do NeonNFT com cards de NFTs em azul neon" loading="lazy">
+        <div><h3>NeonNFT</h3><p>Vitrine de NFTs com tema neon, feita em grupo.</p>
+        <a class="link" href="https://jean-2009.github.io/nft-portfolio/" target="_blank" rel="noopener">Abrir site</a>
+        <a class="link" href="https://github.com/Jean-2009/nft-portfolio" target="_blank" rel="noopener">Código no GitHub</a></div>
+      </article>
+      <article class="site">
+        <img src="img/site-pdm2.jpg" alt="Página Atividades PDM 2 com formulários de soma, média e tabuada" loading="lazy">
+        <div><h3>Atividades PDM 2</h3><p>Soma, média e tabuada em JavaScript.</p>
+        <a class="link" href="https://github.com/Jean-2009?tab=repositories" target="_blank" rel="noopener">Código no GitHub</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HABILIDADES E CONTATO -->
+<section id="contato" class="sessao fundo-lagoa">
+  <div class="miolo duas">
+    <div>
+      <h2>Habilidades</h2>
+      <ul class="chips">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git e GitHub</li><li>Manutenção de computadores</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Contato</h2>
+      <ul class="contatos">
+        <li><a href="mailto:jean.santana2@estudante.ifms.edu.br">jean.santana2@estudante.ifms.edu.br</a> <button class="copiar" data-copiar="jean.santana2@estudante.ifms.edu.br">Copiar</button></li>
+        <li><a href="https://wa.me/5567997167228" target="_blank" rel="noopener">WhatsApp: (67) 99716-7228</a></li>
+        <li><a href="https://github.com/Jean-2009" target="_blank" rel="noopener">GitHub: Jean-2009</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <svg viewBox="0 0 120 100" aria-hidden="true"><use href="#sapo"/></svg>
+  <p>Jean Lucas de Alencar Santana · IFMS Nova Andradina · 2026</p>
+</footer>
+
+<dialog id="modal"><button class="fechar" aria-label="Fechar">✕</button><img src="img/banner-fecinova.jpg" alt="Banner científico da Fecinova, ampliado"></dialog>
+<script src="js/main.js"></script>
+</body>
+</html>
